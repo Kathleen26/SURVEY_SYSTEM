@@ -14,13 +14,15 @@ if (isset($_SESSION['errors'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="container" id="signup">
-        <h1 class="form-title">Register</h1>
+    <div class="container forms" id="signup">
+       
+      <div class="form singup">
+        <div class="form-content">
+          <header>Sign up</header>
         
         
         <?php
@@ -32,7 +34,7 @@ if (isset($_SESSION['errors'])) {
         }
         ?>
         <form method="POST" action="user-account.php">
-            <div class="input-group">
+          <div class="field input-field">
                 <i class="fas fa-user"></i>
                 <input type="text" name="name" id="name" placeholder="Name" required>
                 <?php
@@ -45,7 +47,7 @@ if (isset($_SESSION['errors'])) {
                 ?>
             </div>
 
-            <div class="input-group">
+            <div class="field input-field">
                 <i class="fas fa-envelope"></i>
                 <input type="email" name="email" id="email" placeholder="Email" required>
                 <?php
@@ -58,8 +60,7 @@ if (isset($_SESSION['errors'])) {
                 }
                 ?>
             </div>
-            <div class="input-group password">
-                <i class="fas fa-lock"></i>
+            <div class="field input-field">
                 <input type="password" name="password" id="password" placeholder="Password" >
                 <i id="eye" class="fa fa-eye"></i>
                 <?php
@@ -73,8 +74,8 @@ if (isset($_SESSION['errors'])) {
                 }
                 ?>
             </div>
-            <div class="input-group">
-                <i class="fas fa-lock"></i>
+            <div class="field input-field">
+                 <i class='bx bx-hide eye-icon'></i>
                 <input type="password" name="confirm_password" placeholder="Confirm Password" required>
                 <?php
                 if (isset($errors['confirm_password'])) {
@@ -86,20 +87,31 @@ if (isset($_SESSION['errors'])) {
                 }
                 ?>
             </div>
-            <input type="submit" class="btn" value="Sign Up" name="signup">
+            <input type="submit" class="sign-in-btn" value="Sign Up" name="signup">
         </form>
-        <p class="or">
-            ----------or--------
-        </p>
-        <div class="icons">
-            <i class="fab fa-google"></i>
-            <i class="fab fa-facebook"></i>
-        </div>
-        <div class="links">
-            <p>Already Have Account?</p>
-            <a href="index.php">Sign In</a>
-        </div>
-    </div>
+
+        <div class="form-link">
+          <span>Already have an account?<a href="index.php" class="link login-link">Login</a></span>
+       </div>
+      </div>
+       
+         <div class="line"></div>
+
+         <div class="media-options">
+            <a href="#" class="field facebook">
+              <i class='bx bxl-facebook facebook-icon'></i>
+              <span>Login with Facebook</span>
+            </a>
+         </div>
+
+         <div class="media-options">
+          <a href="#" class="field google">
+            <img src="google-color.png" alt="" class="google-img">
+            <span>Login with Google</span>
+          </a>
+       </div>
+
+  </div>
     <script src="script.js"></script>
 </body>
 

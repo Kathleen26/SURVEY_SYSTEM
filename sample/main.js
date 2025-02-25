@@ -1,3 +1,4 @@
+
 function callDate(){
     var currentDate=(new Date()).toDateString(); 
     document.getElementById('Time').innerHTML=`${currentDate}`;
@@ -9,6 +10,3 @@ function callDate(){
   }
 
 setInterval(function(){callDate(), callTime()}, 1000);
-
-
-

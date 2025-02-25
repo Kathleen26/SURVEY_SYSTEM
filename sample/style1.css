@@ -46,6 +46,7 @@ h1{
     background-color: hsl(209, 86%, 66%);
 }
 
+
 .navbar li{
     float: left;
 }
@@ -67,29 +68,18 @@ h1{
 }
 
 .open-button {
-    display: block;
-    margin: 20px auto; 
-    background-color: hsl(209, 86%, 66%);
-    color: white;
-    padding: 16px;
-    border: none;
-    cursor: pointer;
-    width: 200px; 
-    border-radius: 20px;
-    margin-top: -30px;
-}
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #0171d3;
+    transform: all 0.3s ease;
+    cursor: pointer;
 }
+
 .dateTime {
     position: absolute;
     top: 0px;
@@ -98,4 +88,6 @@ h1{
     padding-top: 16px;
     padding-right: 15px;
     padding-bottom: 10px;
+    padding-left: 15px;
+    background: hsl(209, 86%, 66%);
 }

@@ -25,10 +25,11 @@
 
     <div class="container ">
         <img src="SURNALYSIS-removebg-preview.png" alt="Surnalysis">
+
         </div>
          
         
-   <button class="open-button" onclick="openForm()">Get Started</button>
+        <a href="index.php" class="open-button">Get Started</a>
 
 </body>
 </html>
