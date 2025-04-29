@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+    background-image: linear-gradient(white, rgb(122, 166, 232));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.Title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-style: solid;
+  }
+    
+  .navbar ul {
+    list-style-type: none;
+    background-color: hsl(198, 87%, 50%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 1.2em; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px; 
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: hsl(209, 86%, 66%);
+}
+
+
+.navbar li{
+    float: left;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    margin-bottom: -60px;
+}
+
+.container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+.dateTime {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 16px; 
+    padding-top: 16px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    background: hsl(209, 86%, 66%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: hsl(198, 87%, 50%);
+    border: none;
+    border-radius: 15px;
+    margin: -60px;
+    width: 200px; 
+}
+
+.btn:hover {
+    background-color: hsl(198, 87%, 50%);
+}
+
+.btn:active {
+    background-color: hsl(198, 87%, 50%);
+    transform: translateY(4px);
+}
